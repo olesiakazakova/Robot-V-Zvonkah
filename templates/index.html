@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Классификация аудио</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .index-box { border: 2px dashed #ccc; padding: 20px; text-align: center; margin: 20px 0; }
+        button { background: #4CAF50; color: white; border: none; padding: 10px 15px; cursor: pointer; }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>Загрузите аудиофайл</h1>
+    <form action="/index" method="post" enctype="multipart/form-data">
+        <div class="index-box">
+            <input type="file" name="file" accept=".wav,.mp3" required>
+            <p>Поддерживаемые форматы: WAV, MP3</p>
+        </div>
+        <button type="submit">Анализировать</button>
+    </form>
+</body>
+</html>
