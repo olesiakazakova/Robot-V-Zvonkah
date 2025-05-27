@@ -1,7 +1,7 @@
 # Классификация аудио: Человек vs Робот
 
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
-[![Framework](https://img.shields.io/badge/flask-2.0%2B-lightgrey)](https://flask.palletsprojects.com/)
+[![Flask Version](https://img.shields.io/badge/Flask-2.2.5-blue)](https://flask.palletsprojects.com/)
 
 Это веб-приложение на Flask, которое классифицирует голосовые записи на две категории:
 - Человеческий голос (класс 0)
