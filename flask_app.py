@@ -9,12 +9,12 @@ from sklearn.svm import SVC
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = '/home/prob1/mysite/uploads'
+UPLOAD_FOLDER = './uploads'
 ALLOWED_EXTENSIONS = {'wav', 'mp3'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-model = joblib.load('/home/prob1/mysite/best_model.joblib')
-scaler = joblib.load('/home/prob1/mysite/scaler.joblib')
+model = joblib.load('best_model.joblib')
+scaler = joblib.load('scaler.joblib')
 
 
 def allowed_file(filename):
